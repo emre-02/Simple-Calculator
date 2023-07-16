@@ -1,5 +1,9 @@
 use core::num;
-use std::io::{self, IoSliceMut};
+use std::{io::{self, IoSliceMut}, result};
+
+
+
+
 
 
 
@@ -10,8 +14,8 @@ fn main(){
     println!("1. Add");
     println!("2. Subtract");
     println!("3. Multiply");
-    println!("4. Bölme");
-    println!("5. Divide");
+    println!("4. Divide");
+    println!("5. Exit");
 
 loop {
     println!("Enter Transaction :");
@@ -98,6 +102,8 @@ loop {
         println!("Result: {}", result);
     }
 
+  
+
 
     4 => {
                 if num2 == 0.0 {
@@ -140,10 +146,5 @@ fn multiply(a:f64, b:f64)->f64{
 fn divide(a:f64, b:f64)->f64{
     a/b
 }
-
-
-
-
-
 
 
